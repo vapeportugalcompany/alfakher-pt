@@ -786,7 +786,20 @@ section {
     text-transform: uppercase;
 }
 
+.bid-price,
+.artwork-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
 .price-amount {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.05;
     font-size: 19px;
     font-weight: 800;
     color: var(--cyan);
@@ -794,8 +807,10 @@ section {
 
 .pill-label {
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     padding: 7px 16px;
     background: rgba(47, 140, 255, 0.12);
     color: var(--white);
@@ -803,6 +818,8 @@ section {
     border-radius: 999px;
     font-size: 14px;
     font-weight: 700;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
 /* Reviews */
