@@ -30,19 +30,22 @@ if (hamburger && mobileMenu) {
 
 // Scroll effects
 function syncScrollState() {
-    const scrolled = window.scrollY > 16;
+    const scrollY = window.scrollY;
+    const warnIsHidden = warnBar ? warnBar.classList.contains("hidden") : false;
+    const shouldHideWarn = scrollY > 64 || (warnIsHidden && scrollY > 4);
+    const isScrolled = scrollY > 24;
 
     if (warnBar) {
-        warnBar.classList.toggle("hidden", scrolled);
+        warnBar.classList.toggle("hidden", shouldHideWarn);
     }
 
     if (header) {
-        header.classList.toggle("scrolled", window.scrollY > 90);
-        header.classList.toggle("warn-hidden", scrolled);
+        header.classList.toggle("scrolled", isScrolled);
+        header.classList.toggle("warn-hidden", shouldHideWarn);
     }
 
     if (mobileMenu) {
-        mobileMenu.classList.toggle("warn-hidden", scrolled);
+        mobileMenu.classList.toggle("warn-hidden", shouldHideWarn);
     }
 }
 

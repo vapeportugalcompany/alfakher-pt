@@ -21,11 +21,15 @@
     --gradient-button: linear-gradient(90deg, #2f8cff 0%, #4b68ff 100%);
     --shadow-pink: 0 20px 60px rgba(47, 140, 255, 0.24);
     --container-max-width: 1400px;
-    --section-padding: 64px 20px;
+    --site-gutter: clamp(24px, 3.2vw, 60px);
+    --section-padding: 64px 0;
     --radius-lg: 24px;
     --radius-md: 18px;
     --radius-sm: 12px;
     --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --warn-height: 28px;
+    --header-height: 98px;
+    --mobile-menu-top: calc(var(--warn-height) + var(--header-height));
 }
 
 html {
@@ -65,21 +69,29 @@ img {
     width: 100%;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--site-gutter);
 }
 
 .warn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
     width: 100%;
-    padding: 10px 16px;
+    min-height: var(--warn-height);
+    padding: 5px 16px;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.08em;
     background: #050505;
+    transition: transform 0.25s ease;
+    will-change: transform;
 }
 
 .warn.hidden {
-    display: none;
+    transform: translateY(-100%);
+    pointer-events: none;
 }
 
 /* Age modal */
@@ -183,7 +195,7 @@ img {
 /* Header */
 .header {
     position: fixed;
-    top: 38px;
+    top: var(--warn-height);
     left: 0;
     right: 0;
     z-index: 1000;
@@ -194,6 +206,7 @@ img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 10px 30px rgba(5, 14, 28, 0.18);
     transition: background 0.25s ease, box-shadow 0.25s ease, top 0.25s ease;
+    will-change: top;
 }
 
 .city p:hover {
@@ -224,7 +237,7 @@ img {
 
 .logo {
     display: block;
-    width: 75px;
+    width: 60px;
     height: auto;
     object-fit: contain;
 }
@@ -367,10 +380,10 @@ img {
 /* Mobile menu */
 .mobile-menu {
     position: fixed;
-    top: 138px;
+    top: var(--mobile-menu-top);
     right: -100%;
     width: min(320px, 92vw);
-    height: calc(100vh - 138px);
+    height: calc(100vh - var(--mobile-menu-top));
     z-index: 990;
     background: rgba(22, 8, 36, 0.97);
     backdrop-filter: blur(18px);
@@ -383,8 +396,8 @@ img {
 }
 
 .mobile-menu.warn-hidden {
-    top: 98px;
-    height: calc(100vh - 98px);
+    top: var(--header-height);
+    height: calc(100vh - var(--header-height));
 }
 
 .mobile-nav {
@@ -973,7 +986,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: min(100% - 40px, 1650px);
+    width: min(calc(100% - (var(--site-gutter) * 2)), 1650px);
     margin: 56px auto 0;
     padding: 38px;
     overflow: hidden;
@@ -1299,6 +1312,12 @@ footer > * {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --site-gutter: 20px;
+        --warn-height: 30px;
+        --header-height: 62px;
+    }
+
     .warn {
         padding: 8px 12px;
         font-size: 9px;
@@ -1306,7 +1325,7 @@ footer > * {
     }
 
     .header {
-        top: 38px;
+        top: var(--warn-height);
         left: 0;
         right: 0;
         padding: 9px 0;
@@ -1317,13 +1336,13 @@ footer > * {
     }
 
     .mobile-menu {
-        top: 90px;
-        height: calc(100vh - 90px);
+        top: var(--mobile-menu-top);
+        height: calc(100vh - var(--mobile-menu-top));
     }
 
     .mobile-menu.warn-hidden {
-        top: 62px;
-        height: calc(100vh - 62px);
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
     }
 
     .hero {
@@ -1411,7 +1430,7 @@ footer > * {
     }
 
     footer {
-        width: min(100% - 24px, 1650px);
+        width: min(calc(100% - (var(--site-gutter) * 2)), 1650px);
         padding: 30px 22px 24px;
         border-radius: 28px 28px 0 0;
     }
@@ -1458,8 +1477,14 @@ footer > * {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --site-gutter: 12px;
+        --warn-height: 28px;
+        --header-height: 56px;
+    }
+
     .container {
-        padding: 0 16px;
+        padding: 0 var(--site-gutter);
     }
 
     .hero-title {
@@ -1480,7 +1505,7 @@ footer > * {
     }
 
     .header {
-        top: 34px;
+        top: var(--warn-height);
         padding: 8px 0;
     }
 
@@ -1515,7 +1540,7 @@ footer > * {
     }
 
     footer {
-        width: min(100% - 16px, 1650px);
+        width: min(calc(100% - (var(--site-gutter) * 2)), 1650px);
         padding: 24px 16px 22px;
         border-radius: 24px 24px 0 0;
     }
