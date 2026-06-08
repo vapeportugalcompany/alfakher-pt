@@ -23,172 +23,190 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <script type="application/ld+json">
+        <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@graph": [
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://alfakher.pt/#organization",
+          "name": "Al Fakher",
+          "description": "Al Fakher \u00e9 uma p\u00e1gina informativa em portugu\u00eas que apresenta modelos, cole\u00e7\u00f5es e links relacionados com produtos dispon\u00edveis em vapeportugal.pt.",
+          "url": "https://alfakher.pt/",
+          "logo": "https://alfakher.pt/favicon-96x96.png",
+          "image": "https://alfakher.pt/img/AlFakher-Vape-Descartavel-Cigarro-Eletronico-Banner.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support via vapeportugal.pt",
+            "telephone": "+351 935 718 678",
+            "email": "info@vapeportugal.pt",
+            "areaServed": "PT",
+            "availableLanguage": "pt-PT"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Portugal"
+          },
+          "availableLanguage": "pt-PT"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://alfakher.pt/#website",
+          "name": "Al Fakher",
+          "url": "https://alfakher.pt/",
+          "publisher": {
+            "@id": "https://alfakher.pt/#organization"
+          },
+          "inLanguage": "pt-PT"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://alfakher.pt/#breadcrumb",
+          "itemListElement": [
             {
-                "@type": "Organization",
-                "@id": "https://alfakher.pt/#organization",
-                "name": "Al Fakher",
-                "url": "https://alfakher.pt/",
-                "logo": "https://alfakher.pt/favicon-96x96.png",
-                "image": "https://alfakher.pt/img/AlFakher-Vape-Descartavel-Cigarro-Eletronico-Banner.png",
-                "description": "Al Fakher é uma página informativa em português que apresenta modelos, coleções e links relacionados com produtos disponíveis em vapeportugal.pt.",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+351935718678",
-                    "email": "info@vapeportugal.pt",
-                    "contactType": "customer support via vapeportugal.pt",
-                    "areaServed": "PT",
-                    "availableLanguage": "pt-PT"
-                },
-                "areaServed": {
-                    "@type": "Country",
-                    "name": "Portugal"
-                },
-                "availableLanguage": "pt-PT"
+              "@type": "ListItem",
+              "position": 1,
+              "name": "P\u00e1gina inicial",
+              "item": "https://alfakher.pt/"
             },
             {
-                "@type": "WebSite",
-                "@id": "https://alfakher.pt/#website",
-                "name": "Al Fakher",
-                "url": "https://alfakher.pt/",
-                "inLanguage": "pt-PT",
-                "publisher": {
-                    "@id": "https://alfakher.pt/#organization"
-                }
-            },
-            {
-                "@type": "CollectionPage",
-                "@id": "https://alfakher.pt/#collection",
-                "url": "https://alfakher.pt/",
-                "name": "Vapes Descartáveis Al Fakher",
-                "description": "Página informativa sobre modelos Al Fakher em Portugal, com destaques visuais e ligações para consultar a coleção e os produtos disponíveis em vapeportugal.pt.",
-                "isPartOf": {
-                    "@id": "https://alfakher.pt/#website"
-                },
-                "about": {
-                    "@id": "https://alfakher.pt/#organization"
-                },
-                "breadcrumb": {
-                    "@id": "https://alfakher.pt/#breadcrumb"
-                },
-                "inLanguage": "pt-PT",
-                "mainEntity": {
-                    "@id": "https://alfakher.pt/#itemlist"
-                }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://alfakher.pt/#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Página inicial",
-                        "item": "https://alfakher.pt/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Coleção Al Fakher",
-                        "item": "https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal"
-                    }
-                ]
-            },
-            {
-                "@type": "ItemList",
-                "@id": "https://alfakher.pt/#itemlist",
-                "name": "Lista de modelos apresentados nesta página",
-                "numberOfItems": 6,
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Al Fakher Crown E Hose X 60K",
-                        "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Al Fakher Crown Bar Ultra 25K",
-                        "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Al Fakher HyperMax 15K 0.6%",
-                        "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Al Fakher Crown Bar 8K 0.5%",
-                        "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Al Fakher Crown Bar Pro 8K",
-                        "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 6,
-                        "name": "Al Fakher HyperMax 15K 2%",
-                        "url": "https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://alfakher.pt/#faq",
-                "inLanguage": "pt-PT",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "O que é esta página?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Esta página apresenta uma seleção informativa da coleção Al Fakher em Portugal, com destaques visuais, descrições resumidas e links para consultar os produtos em vapeportugal.pt."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Esta página é uma loja online?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Não. O site alfakher.pt funciona como uma página informativa. A verificação de produtos, disponibilidade e compra é feita em vapeportugal.pt."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Que modelos ou coleções são apresentados?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "A página destaca os modelos Al Fakher Crown E Hose X 60K, Crown Bar Ultra 25K, HyperMax 15K 0.6%, Crown Bar 8K 0.5%, Crown Bar Pro 8K e HyperMax 15K 2%, além da coleção Al Fakher em vapeportugal.pt."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Onde posso consultar os produtos?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Cada botão e cartão desta página encaminha para a coleção Al Fakher ou para páginas de produto em vapeportugal.pt, onde pode consultar detalhes adicionais."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Para quem é destinado este conteúdo?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "O conteúdo destina-se a adultos com idade legal para consultar informação sobre vapes e cigarros eletrónicos em Portugal."
-                        }
-                    }
-                ]
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Cole\u00e7\u00e3o Al Fakher",
+              "item": "https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal"
             }
-        ]
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://alfakher.pt/#collection",
+          "name": "Vapes Descart\u00e1veis Al Fakher",
+          "description": "P\u00e1gina informativa sobre modelos Al Fakher em Portugal, com destaques visuais e liga\u00e7\u00f5es para consultar a cole\u00e7\u00e3o e os produtos dispon\u00edveis em vapeportugal.pt.",
+          "url": "https://alfakher.pt/",
+          "isPartOf": {
+            "@id": "https://alfakher.pt/#website"
+          },
+          "about": {
+            "@id": "https://alfakher.pt/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://alfakher.pt/#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://alfakher.pt/#itemlist"
+          },
+          "inLanguage": "pt-PT"
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://alfakher.pt/#itemlist",
+          "name": "Lista de modelos apresentados nesta p\u00e1gina",
+          "numberOfItems": 9,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Al Fakher Crown E Hose X 60K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Al Fakher Crown Bar Ultra 25K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Al Fakher HyperMax 15K 0.6%",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Al Fakher Crown Bar 8K 0.5%",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Al Fakher Crown Bar Pro 8K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Al Fakher Crown E Hose X 60K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Al Fakher Crown Bar Ultra 25K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Al Fakher HyperMax 15K 2%",
+              "url": "https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Al Fakher Crown Bar Pro 8K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://alfakher.pt/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que \u00e9 esta p\u00e1gina?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Esta p\u00e1gina apresenta uma sele\u00e7\u00e3o informativa da cole\u00e7\u00e3o Al Fakher em Portugal, com destaques visuais, descri\u00e7\u00f5es resumidas e links para consultar os produtos em vapeportugal.pt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Esta p\u00e1gina \u00e9 uma loja online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "N\u00e3o. O site alfakher.pt funciona como uma p\u00e1gina informativa. A verifica\u00e7\u00e3o de produtos, disponibilidade e compra \u00e9 feita em vapeportugal.pt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Que modelos ou cole\u00e7\u00f5es s\u00e3o apresentados?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A p\u00e1gina destaca os modelos Al Fakher Crown E Hose X 60K, Crown Bar Ultra 25K, HyperMax 15K 0.6%, Crown Bar 8K 0.5%, Crown Bar Pro 8K e HyperMax 15K 2%, al\u00e9m da cole\u00e7\u00e3o Al Fakher em vapeportugal.pt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Onde posso consultar os produtos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cada bot\u00e3o e cart\u00e3o desta p\u00e1gina encaminha para a cole\u00e7\u00e3o Al Fakher ou para p\u00e1ginas de produto em vapeportugal.pt, onde pode consultar detalhes adicionais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Para quem \u00e9 destinado este conte\u00fado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O conte\u00fado destina-se a adultos com idade legal para consultar informa\u00e7\u00e3o sobre vapes e cigarros eletr\u00f3nicos em Portugal."
+              }
+            }
+          ],
+          "inLanguage": "pt-PT"
+        }
+      ]
     }
     </script>
 </head>
@@ -217,19 +235,19 @@
     <header class="header" id="top">
         <div class="container">
             <div class="header-content">
-                <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="brand-link" aria-label="Ir para o topo">
+                <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="brand-link" aria-label="Ir para o topo">
                     <img src="favicon-96x96.png" alt="Logótipo Al Fakher" class="logo" loading="lazy" decoding="async">
                 </a>
 
                 <nav class="nav-desktop" aria-label="Navegação principal">
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">FAQ</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">FAQ</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
                 </nav>
 
-                <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="nav-cta-link">
+                <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="nav-cta-link">
                     <button class="btn-connect" type="button">COMPRE JÁ!</button>
                 </a>
 
@@ -245,12 +263,12 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <nav class="mobile-nav" aria-label="Navegação móvel">
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">FAQ</a>
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
-            <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">FAQ</a>
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
+            <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
                 <button class="btn-connect-mobile" type="button">COMPRE JÁ!</button>
             </a>
         </nav>
@@ -291,10 +309,10 @@
                             </p>
 
                             <div class="hero-buttons">
-                                <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
+                                <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
                                     <button class="btn-explore" type="button">COMPRE JÁ!</button>
                                 </a>
-                                <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
+                                <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">
                                     <button class="btn-create" type="button">Ver mais →</button>
                                 </a>
                             </div>
@@ -324,7 +342,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Os melhores sabores Al Fakher</h2>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Ver mais →</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Ver mais →</a>
                 </div>
 
                 <div class="bid-grid">
@@ -339,7 +357,7 @@
                                 <span class="price-amount"><span>60000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="bid-card reveal">
@@ -353,7 +371,7 @@
                                 <span class="price-amount"><span>25000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="bid-card reveal">
@@ -367,7 +385,7 @@
                                 <span class="price-amount"><span>15000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
                 </div>
             </div>
@@ -378,7 +396,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Explora toda a coleção Al Fakhers</h2>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Ver catálogo →</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Ver catálogo →</a>
                 </div>
 
                 <div class="artwork-grid">
@@ -393,7 +411,7 @@
                                 <span class="pill-label"><span>8000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="artwork-card reveal">
@@ -407,7 +425,7 @@
                                 <span class="pill-label"><span>8000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="artwork-card reveal">
@@ -421,7 +439,7 @@
                                 <span class="pill-label"><span>60000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="artwork-card reveal">
@@ -435,7 +453,7 @@
                                 <span class="pill-label"><span>25000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="artwork-card reveal">
@@ -449,7 +467,7 @@
                                 <span class="pill-label"><span>15000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
 
                     <article class="artwork-card reveal">
@@ -463,7 +481,7 @@
                                 <span class="pill-label"><span>8000</span><span>Tragadas</span></span>
                             </div>
                         </div>
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><button class="btn-bid" type="button">COMPRE JÁ!</button></a>
                     </article>
                 </div>
             </div>
@@ -591,36 +609,36 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Coleção Al Fakher</h2>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Voltar ao topo →</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="see-all">Voltar ao topo →</a>
                 </div>
 
                 <div class="desc-grid">
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><h3>E-Hose X 60K - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"><h3>E-Hose X 60K - Cigarro Eletrónico</h3></a>
                         <p>O Al Fakher Crown Bar E-Hose X 60K é um vape descartável premium desenvolvido para quem procura máxima autonomia e desempenho avançado. Com até 60000 tragadas, bateria recarregável USB-C e produção intensa de vapor, oferece uma experiência semelhante à shisha tradicional. Este cigarro eletrónico destaca-se pelos sabores intensos, nuvens densas e longa duração.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><h3>Ultra 25K - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal"><h3>Ultra 25K - Cigarro Eletrónico</h3></a>
                         <p>O Al Fakher Crown Bar Ultra 25K combina tecnologia moderna com uma experiência de vape suave e potente. Equipado com ecrã LED curvo e mesh coil avançada, este vape descartável proporciona sabores consistentes e excelente produção de vapor. Ideal para utilizadores que procuram um cigarro eletrónico premium em Portugal com design moderno e alto desempenho.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 0.6% - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 0.6% - Cigarro Eletrónico</h3></a>
                         <p>O Al Fakher HyperMax 15K foi criado para utilizadores que procuram equilíbrio entre sabor, autonomia e praticidade. Este vape descartável inclui fluxo de ar ajustável, permitindo personalizar cada tragada conforme a preferência do utilizador. Com sabores refrescantes e vapor suave, é uma excelente escolha para quem procura vapes descartáveis de qualidade premium.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><h3>Pro 8K - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal"><h3>Pro 8K - Cigarro Eletrónico</h3></a>
                         <p>O Al Fakher Crown Bar Pro 8K oferece uma experiência premium num formato compacto e elegante. Graças à resistência DTL de 0.6 ohm, este cigarro eletrónico descartável produz vapor intenso e sabores mais ricos em cada utilização. Ideal para quem procura um vape descartável portátil sem comprometer a qualidade.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"><h3>Crown Bar 8K - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal"><h3>Crown Bar 8K - Cigarro Eletrónico</h3></a>
                         <p>O Al Fakher Crown Bar 8K é um vape descartável leve, prático e extremamente fácil de utilizar. Desenvolvido para o dia a dia, proporciona sabores intensos e tragadas suaves até ao final da utilização. É uma excelente opção para quem procura um cigarro eletrónico descartável fiável e compacto em Portugal.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 2% - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 2% - Cigarro Eletrónico</h3></a>
                         <p>A versão Al Fakher HyperMax 15K 2% Nicotina foi concebida para quem prefere tragadas mais fortes e satisfatórias. Este vape descartável combina excelente produção de vapor com sabores duradouros e refrescantes. Perfeito para utilizadores que procuram um vaper premium com maior intensidade e desempenho consistente.</p>
                     </article>
                     <article class="desc-item reveal">
-                        <a href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 2% - Cigarro Eletrónico</h3></a>
+                        <a target="_blank" href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal"><h3>HyperMax 15K 2% - Cigarro Eletrónico</h3></a>
                         <p>Versão com maior intensidade de nicotina para uma sensação mais forte. Excelente escolha para utilizadores que procuram tragadas mais intensas e refrescantes.</p>
                     </article>
                 </div>
@@ -632,7 +650,7 @@
     <footer id="footer">
         <div class="social">
             <div class="footer-logo">
-                <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="logo">
+                <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" class="logo">
                     <img src="favicon-96x96.png" alt="Logótipo Al Fakher" class="footer-logo-img" loading="lazy" decoding="async">
                 </a>
             </div>
@@ -641,21 +659,21 @@
         <div class="footer-cont">
             <div class="foot-cont-one">
                 <div class="cont-col">
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
-                    <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal">Al Fakher E-Hose X 60K</a>
-                    <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal">Al Fakher Ultra 25K</a>
-                    <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal">Al Fakher HyperMax 15K 0.6%</a>
-                    <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal">Al Fakher Pro 8K</a>
-                    <a href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal">Al Fakher Crown Bar 8K</a>
-                    <a href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal">Al Fakher HyperMax 15K 2%</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal">Al Fakher E-Hose X 60K</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-ultra-25k-vape-descartavel-portugal">Al Fakher Ultra 25K</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-hypermax-15k-vape-descartavel-portugal">Al Fakher HyperMax 15K 0.6%</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-pro-8k-vape-descartavel-portugal">Al Fakher Pro 8K</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/al-fakher-crown-bar-8k-vape-descartavel-portugal">Al Fakher Crown Bar 8K</a>
+                    <a target="_blank" href="https://vapeportugal.pt/products/alfakher-crown-bar-hypermax-15k-vape-descartavel-portugal">Al Fakher HyperMax 15K 2%</a>
                 </div>
 
                 <div class="cont-col">
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Blog</a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Página Inicial</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Sobre nós</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Contacto</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Blog</a>
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Produtos</a>
                 </div>
             </div>
 
@@ -669,7 +687,7 @@
                     <p>+351 935 718 678</p>
                 </div>
                 <div class="footer-social-links" aria-label="Redes sociais">
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="Instagram">
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="Instagram">
                         <span class="social-chip">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <rect x="3" y="3" width="18" height="18" rx="5"></rect>
@@ -678,14 +696,14 @@
                             </svg>
                         </span>
                     </a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="Facebook">
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="Facebook">
                         <span class="social-chip">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M14 8.3h2.4V4.5h-3c-3.2 0-4.8 1.9-4.8 4.6v2.2H6v3.9h2.6V22h4.2v-6.8h3.1l.5-3.9h-3.6V9.5c0-.8.4-1.2 1.2-1.2Z"></path>
                             </svg>
                         </span>
                     </a>
-                    <a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="TikTok">
+                    <a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal" aria-label="TikTok">
                         <span class="social-chip">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M15.4 3c.4 2.8 1.9 4.5 4.6 4.7v4c-1.6.1-3.1-.5-4.5-1.4v5.9c0 7.5-8.2 9.8-11.5 4.4-2.1-3.5-.8-9.6 6-9.9v4.2c-.5.1-1.1.2-1.6.5-1.5.8-1.9 2.3-1.1 3.6 1.5 2.5 4.1 1.1 4.1-1.7V3h4Z"></path>
@@ -701,56 +719,56 @@
                 <p id="city">Al Fakher em Portugal</p>
             </div>
             <ul id="portugal-cities" class="footer-span-list" hidden>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lisboa</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Porto</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Braga</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Coimbra</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Faro</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Aveiro</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Cascais</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Sintra</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lagos</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Albufeira</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Evora</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Guimaraes</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Viseu</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Setubal</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Leiria</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Portimao</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Funchal</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Vila Nova de Gaia</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Ponta Delgada</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Braganca</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Viana do Castelo</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Covilha</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Tomar</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Beja</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Elvas</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Tavira</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Olhao</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Peniche</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Nazare</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Ericeira</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Torres Vedras</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Barcelos</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Chaves</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Espinho</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Matosinhos</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Amarante</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Santarem</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Castelo Branco</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Guarda</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lamego</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Almada</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Oeiras</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Seixal</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Montijo</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Sesimbra</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Palmela</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Entroncamento</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Abrantes</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Figueira da Foz</a></li>
-                <li><a href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Peso da Regua</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lisboa</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Porto</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Braga</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Coimbra</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Faro</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Aveiro</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Cascais</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Sintra</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lagos</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Albufeira</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Evora</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Guimaraes</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Viseu</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Setubal</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Leiria</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Portimao</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Funchal</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Vila Nova de Gaia</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Ponta Delgada</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Braganca</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Viana do Castelo</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Covilha</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Tomar</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Beja</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Elvas</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Tavira</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Olhao</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Peniche</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Nazare</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Ericeira</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Torres Vedras</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Barcelos</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Chaves</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Espinho</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Matosinhos</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Amarante</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Santarem</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Castelo Branco</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Guarda</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Lamego</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Almada</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Oeiras</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Seixal</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Montijo</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Sesimbra</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Palmela</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Entroncamento</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Abrantes</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Figueira da Foz</a></li>
+                <li><a target="_blank" href="https://vapeportugal.pt/collections/al-fakher-vapes-descartaveis-portugal">Al Fakher em Peso da Regua</a></li>
             </ul>
         </div>
 

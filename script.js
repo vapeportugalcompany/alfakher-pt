@@ -1,25 +1,3 @@
-// Normalize external links without changing existing destinations.
-document.querySelectorAll('a[href]').forEach((link) => {
-    const href = link.getAttribute("href");
-
-    if (!href || href.startsWith("#")) {
-        return;
-    }
-
-    try {
-        const url = new URL(href, window.location.href);
-        const isHttp = url.protocol === "http:" || url.protocol === "https:";
-        const isExternal = url.origin !== window.location.origin;
-
-        if (isHttp && isExternal) {
-            link.setAttribute("target", "_blank");
-            link.setAttribute("rel", "noopener noreferrer");
-        }
-    } catch {
-        // Ignore malformed href values and preserve current behavior.
-    }
-});
-
 // Mobile menu
 const body = document.body;
 const hamburger = document.getElementById("hamburger");
